@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-4">Shopping Cart</h1>
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-responsive table-bordered" id="shopCart">
+            <!-- Table Header -->
+            <thead style="font-weight:bold">
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Unit Cost</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Subtotal</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <!-- Table Body -->
+            <tbody>
+              <tr>
+                <td class="item">Salmon</td>
+                <td class="unitCost">70.00</td>
+                <td class="quantity"> <input type="number"></input> </td>
+                <td class="subTotal"></td>
+                <td><button class='btn btn-sm remove btn-danger'>Remove</button></td>
+              </tr>
+              <tr>
+                <td class="item">Steak</td>
+                <td class="unitCost">50.00</td>
+                <td class="quantity"> <input type="number"></input> </td>
+                <td class="subTotal"></td>
+                <td><button class='btn btn-sm remove btn-danger'>Remove</button></td>
+              </tr>
+              <tr>
+                <td class="item">Pork</td>
+                <td class="unitCost">40.00</td>
+                <td class="quantity"> <input type="number"></input> </td>
+                <td class="subTotal"></td>
+                <td><button class='btn btn-sm remove btn-danger'>Remove</button></td>
+              </tr>
+              <tr>
+                <td class="item">Carp</td>
+                <td class="unitCost">69.00</td>
+                <td class="quantity"> <input type="number"></input> </td>
+                <td class="subTotal"></td>
+                <td><button class='btn btn-sm remove btn-danger'>Remove</button></td>
+              </tr>
+              <tr id='addItem'>
+                <td><input class='form-control input-sm mx-2' type='text' id='item' placeholder='Item'></input></td>
+                <td><input class='form-control input-sm mx-2' type='number' id='unitCost' placeholder='Price'></input></td>
+                <td colspan='2'></td>
+                <td><button class='btn btn-success btn-sm add'>Add</button></td>
+              </tr>
+            </tbody>
+          </table> 
+          <!-- End of Table content -->
+          
+          <div class="col-12 col-md-6">
+           <h3>Total Value: $<span id="totalCost"></span></h3>
+          </div>
+        </div>
+       
+    </div>
+
+  </body>
+</html>
