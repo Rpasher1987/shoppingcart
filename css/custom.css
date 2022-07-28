@@ -1,0 +1,14 @@
+.unitCost::before,
+.subTotal::before{
+  content: "$ ";
+}
+h1 {
+  font-weight: bolder;
+}
+
+thead {
+  background-color: #33bff4;
+}
+div.container#totalValue {
+  border: 3pt;
+}
